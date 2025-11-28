@@ -5,13 +5,17 @@ import os
 import argparse
 import sys
 from discord.ext import commands
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # ==========================================
 # CONFIGURATION
 # ==========================================
 # PUT YOUR BOT TOKEN HERE
-BOT_TOKEN = "X" 
-GUILD_ID = 0
+BOT_TOKEN = os.getenv("DISCORD_TOKEN")
+GUILD_ID = int(os.getenv("DISCORD_GUILD_ID", "0"))
 
 # File to store role backups
 BACKUP_FILE = "role_backup.json"

@@ -23,9 +23,12 @@ A powerful and simple Discord bot designed to backup, strip, and restore user ro
     ```
 
 3.  **Configuration**:
-    -   Open `bot.py`.
-    -   Ensure `BOT_TOKEN` is set to your Discord Bot Token.
-    -   Ensure `GUILD_ID` is set to the ID of the server you want to manage.
+    -   Create a `.env` file in the project root.
+    -   Add your token and guild ID:
+        ```env
+        DISCORD_TOKEN=your_token_here
+        DISCORD_GUILD_ID=your_guild_id_here
+        ```
 
 ## Usage
 
